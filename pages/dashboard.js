@@ -380,10 +380,9 @@ const Dashboard = () => {
             borderRadius="10px"
             mr={2}
           >
-            <InputLeftElement
-              pointerEvents="none"
-              children={<FiSearch color="gray" />}
-            />
+            <InputLeftElement pointerEvents="none">
+              <FiSearch color="gray" />
+            </InputLeftElement>
             <Input type="text" placeholder="Search" borderRadius="10px" />
           </InputGroup>
           <IconButton
@@ -609,14 +608,18 @@ const Dashboard = () => {
           Card number
         </Text>
         <InputGroup>
-          <InputLeftElement pointerEvents="none" children={<FiCreditCard />} />
+          <InputLeftElement pointerEvents="none">
+            <FiCreditCard />
+          </InputLeftElement>
           <Input placeholder="xxxx xxxx xxxx xxxx" borderRadius="5" />
         </InputGroup>
         <Text mt={5} mb={2} color="gray.500">
           Sum
         </Text>
         <InputGroup>
-          <InputLeftElement pointerEvents="none" children={<FiDollarSign />} />
+          <InputLeftElement pointerEvents="none">
+            <FiDollarSign />
+          </InputLeftElement>
           <Input placeholder="130.00" borderRadius="5" />
         </InputGroup>
         <Button
